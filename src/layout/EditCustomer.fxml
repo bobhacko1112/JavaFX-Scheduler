@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditCustomerController">
+   <children>
+      <Label layoutX="273.0" layoutY="263.0" />
+      <TableView fx:id="addressTable" layoutX="319.0" layoutY="21.0" prefHeight="338.0" prefWidth="486.0">
+        <columns>
+          
+        </columns>
+      </TableView>
+      <TableView fx:id="customerListTable" layoutX="14.0" layoutY="21.0" prefHeight="400.0" prefWidth="294.0">
+        <columns>
+          
+        </columns>
+      </TableView>
+      <Label layoutX="590.0" layoutY="6.0" text="Addresses" />
+      <Button layoutX="211.0" layoutY="430.0" mnemonicParsing="false" onAction="#addCustomer" prefHeight="26.0" prefWidth="180.0" text="Add This Customer" />
+      <Button layoutX="410.0" layoutY="430.0" mnemonicParsing="false" onAction="#editCustomer" prefHeight="26.0" prefWidth="180.0" text="Edit This Customer" />
+      <Button layoutX="14.0" layoutY="430.0" mnemonicParsing="false" onAction="#deleteCustomer" text="Delete This Customer" />
+      <TextField fx:id="name" layoutX="547.0" layoutY="374.0" promptText="Name" />
+      <Label layoutX="427.0" layoutY="379.0" text="Customer Name:" />
+      <Label layoutX="158.0" layoutY="6.0" text="All Customers" />
+      <ToggleButton fx:id="isActive" layoutX="332.0" layoutY="374.0" mnemonicParsing="false" text="Active" />
+      <Separator layoutX="319.0" layoutY="405.0" prefHeight="16.0" prefWidth="667.0" />
+      <TextField fx:id="addressText" layoutX="815.0" layoutY="46.0" promptText="New Address" />
+      <TextField fx:id="phoneText" layoutX="815.0" layoutY="83.0" promptText="New Phone Number" />
+      <TextField fx:id="zipText" layoutX="815.0" layoutY="120.0" promptText="New ZIP code" />
+      <Button layoutX="835.0" layoutY="164.0" mnemonicParsing="false" onAction="#addAddress" text="Add This Address" />
+   </children>
+</Pane>

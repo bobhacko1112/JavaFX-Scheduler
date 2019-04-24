@@ -1,0 +1,5 @@
+#! /bin/bash
+astyle -t3 -N -j -k1 -z2 -n -r -H -U -p -q -w -Y -L -S ./*.java
+
+
+

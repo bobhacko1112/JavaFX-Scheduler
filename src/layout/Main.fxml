@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <children>
+      <TabPane layoutX="-5.0" layoutY="-5.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="1008.0" tabClosingPolicy="UNAVAILABLE" tabMaxWidth="300.0">
+        <tabs>
+            <Tab fx:id="appointmentsTab" closable="false" text="Appointments">
+              <content>
+                  <fx:include fx:id="appointments" source="Appointments.fxml"/>
+                
+              </content>
+            </Tab>
+          <Tab fx:id="reportsTab" closable="false" text="Reports">
+            <content>
+              <fx:include fx:id="reports" source="Reports.fxml"/>
+            </content>
+          </Tab>
+          <Tab fx:id="customersTab" closable="false" text="Customers">
+            <content>
+              <fx:include fx:id="customers" source="Customers.fxml"/>
+            </content>
+          </Tab>
+            <Tab fx:id="calenderTab" closable="false" text="Calender">
+              <content>
+                <fx:include fx:id="calender" source="Calender.fxml"/>
+              </content>
+            </Tab>
+            <Tab fx:id="editAppointmentTab" closable="false" text="Edit Appointments">
+              <content>
+                <fx:include fx:id="editAppointment" source="EditAppointment.fxml"/>
+              </content>
+            </Tab>
+            <Tab fx:id="editCustomerTab" closable="false" text="Edit Customers">
+              <content>
+                <fx:include fx:id="editCustomer" source="EditCustomer.fxml"/>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

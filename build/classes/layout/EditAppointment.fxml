@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditAppointmentController">
+   <children>
+      <DatePicker fx:id="date" layoutX="802.0" layoutY="325.0" prefHeight="26.0" prefWidth="170.0" />
+      <Label layoutX="732.0" layoutY="330.0" text="On Date:" textAlignment="RIGHT" />
+      <ChoiceBox fx:id="start" layoutX="804.0" layoutY="364.0" prefHeight="26.0" prefWidth="170.0" />
+      <ChoiceBox fx:id="end" layoutX="804.0" layoutY="404.0" prefHeight="26.0" prefWidth="170.0" />
+      <Label layoutX="761.0" layoutY="369.0" text="From:" textAlignment="RIGHT" />
+      <Label layoutX="780.0" layoutY="409.0" text="To:" />
+      <Label layoutX="273.0" layoutY="263.0" />
+      <TableView fx:id="customersTable" layoutX="699.0" layoutY="21.0" prefHeight="181.0" prefWidth="130.0">
+        <columns>
+          
+        </columns>
+      </TableView>
+      <TextField fx:id="title" layoutX="802.0" layoutY="250.0" promptText="Meeting Type" />
+      <TextField fx:id="location" layoutX="802.0" layoutY="287.0" promptText="Location" />
+      <Label layoutX="699.0" layoutY="255.0" prefHeight="16.0" prefWidth="99.0" text="Meeting Type:" />
+      <Label layoutX="732.0" layoutY="292.0" text="Localtion:" textAlignment="RIGHT" />
+      <TableView fx:id="appointmentsTable" layoutX="14.0" layoutY="21.0" prefHeight="400.0" prefWidth="670.0">
+        <columns>
+          
+        </columns>
+      </TableView>
+      <Label layoutX="273.0" layoutY="6.0" text="All Appointments" />
+      <TableView fx:id="repsTable" layoutX="844.0" layoutY="21.0" prefHeight="181.0" prefWidth="130.0">
+         <columns>
+            
+         </columns>
+      </TableView>
+      <Button layoutX="211.0" layoutY="430.0" mnemonicParsing="false" onAction="#addAppointment" prefHeight="26.0" prefWidth="180.0" text="Add This Appointment" />
+      <Button layoutX="410.0" layoutY="430.0" mnemonicParsing="false" onAction="#editAppointment" prefHeight="26.0" prefWidth="180.0" text="Edit This Appointment" />
+      <Button layoutX="14.0" layoutY="430.0" mnemonicParsing="false" onAction="#deleteAppointment" text="Delete This Appointment" />
+      <TextField fx:id="description" layoutX="802.0" layoutY="211.0" promptText="Description" />
+      <Label layoutX="709.0" layoutY="216.0" text="Description:" />
+   </children>
+</Pane>
